@@ -8,4 +8,4 @@ def magic_calculation(a, b):
             add_new = add(add_new, index)
         return (add_new)
     else:
-        retrun(sub(a, b))
+        return(sub(a, b))
