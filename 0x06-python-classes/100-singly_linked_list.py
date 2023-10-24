@@ -1,5 +1,5 @@
 #!/usr.bin/python3
-""" Defines classes  node and  singly linked list """
+""" Defines classes  Node and  SinglylinkedList """
 
 
 class Node:
@@ -63,9 +63,9 @@ class Node:
         Raises:
             TypeError: next_node must be a Node object
         """
-         if value is not None and not isinstance(value, Node):
-             raise TypeError("next_node must be a Node object")
-         self.__next_node = value
+        if value is not None and not isinstance(value, Node):
+            raise TypeError("next_node must be a Node object")
+        self.__next_node = value
 
 
 class SinglyLinkedList:
