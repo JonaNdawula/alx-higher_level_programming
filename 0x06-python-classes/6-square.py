@@ -50,17 +50,26 @@ class Square:
             raise TypeError("size must be an integer")
         if value < 0:
             raise ValueError("size must be >= 0")
-        self.__size = value
+        else:
+            self.__size = value
 
     @property
     def position(self):
         """
-        Property setter for position
+        Retuns Square position
+        """
+        return (self.__position)
 
-        Args:
-            value (tuple): position of square
+        @position.setter
+        def position(self, value):
 
-        Raises:
+            """
+            Property setter for position
+
+            Args:
+                value (tuple): position of square
+
+            Raises:
             TypeError: position must be a tuple of 2 positive integers
         """
 
