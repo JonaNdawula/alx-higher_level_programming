@@ -80,7 +80,7 @@ class SinglyLinkedList:
         Creates SinglyLinkedList
 
         Args:
-            head : reps the head of SinglyLinkedList
+            head: reps the head of SinglyLinkedList
         """
         self.__head = None
 
