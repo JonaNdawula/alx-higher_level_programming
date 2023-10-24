@@ -80,7 +80,7 @@ class SinglyLinkedList:
         Creates SinglyLinkedList
 
         Args:
-            __head : reps the head of SinglyLinkedList
+            head : reps the head of SinglyLinkedList
         """
         self.__head = None
 
@@ -109,8 +109,9 @@ class SinglyLinkedList:
         Args:
             value: value
         """
-        new_node = Node(value)
+
         if self.__head is None:
+            new_node = Node(value)
             new_node.next_node = self.__head
             self.__head = new_node
         else:
