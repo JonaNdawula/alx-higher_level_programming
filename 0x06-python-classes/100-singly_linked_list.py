@@ -20,52 +20,52 @@ class Node:
         self.data = data
         self.next_node = next_node
 
-        @property
-        def data(self):
-            """
-            gets the data field instance
+    @property
+    def data(self):
+        """
+        gets the data field instance
 
-            Returns: data field of node
-            """
-            return (self.__data)
+        Returns: data field of node
+        """
+        return (self.__data)
 
-        @data.setter
-        def data(self, value):
-            """
-            sets data property
+    @data.setter
+    def data(self, value):
+        """
+        sets data property
 
-            Args: value (int): data field of node
+        Args: value (int): data field of node
 
-            Raises:
-                TypeError: data must be an integer
-            """
-            if not isinstance(value, int):
-                raise TypeError("data must be an integer")
-            self.__data = value
+        Raises:
+        TypeError: data must be an integer
+        """
+        if not isinstance(value, int):
+            raise TypeError("data must be an integer")
+        self.__data = value
 
-        @property
-        def next_node(self):
-            """
-            gets the next_node instance
+    @property
+    def next_node(self):
+        """
+        gets the next_node instance
 
-            Returns: The instsance of next_node
-            """
-            return (self.__next_node)
+        Returns: The instsance of next_node
+        """
+        return (self.__next_node)
 
-        @next_node.setter
-        def next_node(self, value):
-            """
-            sets the node
+    @next_node.setter
+    def next_node(self, value):
+        """
+        sets the node
 
-            Args:
-                value (none): next node of Node class
+        Args:
+            value (none): next node of Node class
 
-            Raises:
-                TypeError: next_node must be a Node object
-            """
-            if value is not None and not isinstance(value, Node):
-                raise TypeError("next_node must be a Node object")
-            self.__next_node = value
+        Raises:
+            TypeError: next_node must be a Node object
+        """
+         if value is not None and not isinstance(value, Node):
+             raise TypeError("next_node must be a Node object")
+         self.__next_node = value
 
 
 class SinglyLinkedList:
