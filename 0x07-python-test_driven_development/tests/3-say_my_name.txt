@@ -1,0 +1,37 @@
+ The ``3-say_my_name`` module
+===================================
+ usage of  3-say_my_name.py
+===================================
+
+
+
+This library has one function called ``say_my_name()``
+
+``say_my_name()`` prints a person's first and last name
+
+Importing the function say_my_name
+	>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+
+Pass first_name and last_name correctly.
+	>>> say_my_name("Jonathan", "Ndawula")
+	My name is Jonathan Ndawula
+
+pass first_name as none.
+	>>> say_my_name(None, "Benson")
+	Traceback (most recent call last):
+	  ...
+	TypeError: first_name must be a string
+
+pass last_name as none.
+	>>> say_my_name("William", None)
+	Traceback (most recent call last):
+	  ...
+	TypeError: last_name must be a string
+
+pass first_name and last_name as none.
+	>>> say_my_name(None, None)
+	Traceback (most recent call last):
+	  ...
+	TypeError: first_name must be a string
+

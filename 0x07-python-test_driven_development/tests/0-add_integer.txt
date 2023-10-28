@@ -1,29 +1,44 @@
-0-add_integer.txt
-====================
+The ``0-add_integer`` module
+=============================
+usage of 0-add_integer
+=============================
 
+This library contains one function called ``add_integer()``
 
-Import the 'add_integer' function from the 'example' module:
+``add_integer()`` adds two integers
 
->>> from example import add_integer
+>>> add_integer = __import__('0-add_integer').add_integer
 
 use it to add the two integers:
 
->>> add_integer(2,3)
-5
+Add two integers.
+	>>> add_integer(2,3)
+	5
 
-Can be also used with floats:
+Add two floats.
+	>>> add_integer(7.5, 4.3)
+	11
 
->>> add_integer(7.5, 4.3)
-11
+Add a string and integer.
+	>>> add_integer('x', 3)
+	Traceback (most recent call last):
+           ...
+	TypeError: a must be an integer
 
-if either 'a' or 'b' is not an integer or a float, raise a TypeError:
+Add list to integer.
+	>>> add_integer([], 4)
+	Traceback (most recent call last):
+	   ...
+	TypeError: a must be an integer
 
->>> add_integer(10, "11")
-Traceback (most recent call):
-	...
-TypeError:  b must be an integer
+Add integer to string.
+	>>> add_integer(10, '90')
+	Traceback (most recent call last):
+           ...
+	TypeError: b must be an integer
 
->>> add_integer("11.9", 2)
-Traceback (most recent call):
-	...
-TypeError: a must be an integer
+Add set to an integer.
+	>>> add_integer({}, 99)
+	Traceback (most recent call last):
+          ...
+	TypeError: a must be an integer
