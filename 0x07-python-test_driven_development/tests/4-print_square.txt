@@ -1,0 +1,59 @@
+``4-print_square`` module
+=============================
+
+
+Function contained ``print_square()``
+
+``print_square()`` prints square with character pattern #
+
+Import function print_square
+	>>> print_square = __import__('4-print_square').print_square
+
+Pass integer as size of the side.
+	>>> print_square(3)
+	###
+	###
+	###
+
+Pass a negative parameter.
+	>>> print_square(-3)
+	Traceback (most recent call last):
+	  ...
+	ValueError: size must be >= 0
+
+Pass float as parameter.
+	>>> print_square(9.9)
+	Traceback (most recent call last):
+	  ...
+	TypeError: size must be an integer
+
+Pass None as  parameter.
+	>>> print_square(None)
+	Traceback (most recent call last):
+	  ...
+	TypeError: size must be an integer
+
+Pass string as parameter.
+	>>> print_square('5')
+	Traceback (most recent call last):
+	  ...
+	TypeError: size must be an integer
+
+Pass a set as parameter.
+	>>> print_square({})
+	Traceback (most recent call last):
+	  ...
+	TypeError: size must be an integer
+
+Pass a list as parameter.
+	>>> print_square([])
+	Traceback (most recent call last):
+	  ...
+	TypeError: size must be an integer
+
+Pass booleans as parameter.
+	>>> print_square(True)
+	#
+
+	>>> print_square(False)
+
