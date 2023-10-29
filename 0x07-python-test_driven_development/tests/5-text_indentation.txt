@@ -1,0 +1,43 @@
+``5-text_indentation`` module
+==============================
+
+
+Has one function ``text_indentstion()``
+
+``text_indentation`` prints text with two lines after . ? :
+
+Import text_indentation function
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+pass a text.
+	>> text_indentation("What is your name? And how old are you ?list 5 cities: Tokyo, New York, Alberta, Kampala, Washington")
+	What is your name?
+	<BLANKLINE>
+	And how old are you?
+	<BLANKLINE>
+	list 5 cities: 
+	<BLANKLINE>
+	Tokyo, New York, Alberta, Kampala, Washington
+
+Pass word with space before and after.
+	>>> text_indentation(" Furgurson ")
+	Furgurson
+
+Pass word with character at end
+	>>> text_indentation("William.")
+	William.
+	<BLANKLINE>
+
+Pass word with space at end
+	>>> text_indentation("Jonathan ")
+	Jonathan
+
+Pass word with space at beginning
+	>>> text_indentation("  Ndawula")
+	Ndawula
+
+Pass None as a parameter
+	>>> text_indentation(None)
+	Traceback (most recent call last):
+	   ...
+	TypeError: text must be a string
