@@ -12,6 +12,7 @@ class Rectangle:
         width (int): rectangle width
         height (int): rectangle height
     """
+    
     number_of_instances = 0
     print_symbol = "#"
 
