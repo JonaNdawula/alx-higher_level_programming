@@ -12,6 +12,7 @@ class Rectangle:
         width (int): rectangle width
         height(int): rectngle height
     """
+
     number_of_instances = 0
     print_symbol = "#"
 
@@ -80,7 +81,6 @@ class Rectangle:
     def perimeter(self):
         """
         Perimeter of rectangle
-
         """
         if self.__height == 0 or self.__width == 0:
             return (0)
