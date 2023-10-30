@@ -114,5 +114,5 @@ class Rectangle:
         """
         Deletes rectangle instance
         """
-        print("{:s}", format("Bye rectangle..."))
+        print("{:s}".format("Bye rectangle..."))
         type(self).number_of_instances -= 1
