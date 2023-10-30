@@ -6,9 +6,9 @@
 
 class Rectangle:
     def __init__(self, width=0, height=0):
-    """
-    Initialize -  3params self, width, height
-    """
+        """
+        Initialize -  3params self, width, height
+        """
         self.width = width
         self.height = height
 
