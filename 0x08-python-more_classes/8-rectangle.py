@@ -9,8 +9,8 @@ class Rectangle:
     Defines properties of a rectangle
 
     Attributes:
-    width (int): rectangle width
-    height (int): rectangle height
+        width (int): rectangle width
+        height (int): rectangle height
     """
     number_of_instances = 0
     print_symbol = "#"
