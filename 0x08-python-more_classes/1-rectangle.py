@@ -5,9 +5,19 @@
 
 
 class Rectangle:
+    """
+    Class defining rectngle properties
+
+    Attributs:
+        width(int): rectangle width
+        height (int) rectangle height
+
+    """
     def __init__(self, width=0, height=0):
         """
         Initialize -  3params self, width, height
+
+    
         """
         self.width = width
         self.height = height
