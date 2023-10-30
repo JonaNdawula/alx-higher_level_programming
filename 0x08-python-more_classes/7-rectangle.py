@@ -7,7 +7,7 @@ Rectangle class
 class Rectangle:
     """
     Defines retangle properties
-    
+
     Attributes:
         width(int): rectangle width
         height (int): rectangle height
@@ -108,7 +108,7 @@ class Rectangle:
         """
         string representation of rectangle
         """
-        return ("Rectangle({:d}, {:d})".format(self.__width, self.__heigt))
+        return ("Rectangle({:d}, {:d})".format(self.__width, self.__height))
 
     def __del__(self):
         """
