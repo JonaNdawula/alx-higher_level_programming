@@ -7,7 +7,8 @@ Rectangle class
 class Rectangle:
     """
     Defines retangle properties
-    Attribute:
+    
+    Attributes:
         width(int): rectangle width
         height (int): rectangle height
     """
