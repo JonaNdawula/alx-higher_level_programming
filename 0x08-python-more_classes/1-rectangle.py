@@ -17,7 +17,7 @@ class Rectangle:
         """
         Initialize -  3params self, width, height
 
-    
+
         """
         self.width = width
         self.height = height
