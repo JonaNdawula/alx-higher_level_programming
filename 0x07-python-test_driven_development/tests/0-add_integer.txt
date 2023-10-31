@@ -42,3 +42,40 @@ Add set to an integer.
 	Traceback (most recent call last):
           ...
 	TypeError: a must be an integer
+
+Add positive  to negative integer
+	>>> add_integer(99, -3)
+	96
+
+Add positive integer to negative float
+	>>> add_integer(10.4, -2)
+	8
+
+Add two None parameter
+	>>> add_integer(None, None)
+	Traceback (most recent call last):
+	  ...
+	TypeError: a must be an integer
+
+
+Add an integer to a None
+	>>> add_integer(9, None)
+	Traceback (most recent call last):
+	  ...
+	TypeError: b must be an integer
+
+	>>> add_integer(None, 9)
+	Traceback (most recent call last):
+	  ...
+	TypeError: a must be an integer
+
+Add an object to an integer
+	>>> add_integer((1, 2, 3), 10)
+	Traceback (most recent call last):
+	  ...
+	TypeError: a must be an integer
+
+	>>> add_integer(10, (1, 2, 3))
+	Traceback (most recent call last):
+	  ...
+	TypeError: b must be an integer
