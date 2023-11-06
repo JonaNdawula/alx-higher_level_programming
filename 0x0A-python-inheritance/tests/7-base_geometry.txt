@@ -1,0 +1,38 @@
+``7-base_geometry.py`` module
+==============================
+
+==============================
+
+
+Contains one function ``integer_validator()``
+
+``integer_validator`` does integer validation
+
+Importing the function:
+	>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+Test for passing a float 
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("age", 25.5)
+	Traceback (most recent call last):
+	    ...
+	TypeError: age must be an integer
+
+Test for passing a string value containing an integer
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("year", "2023")
+	Traceback (most recent call last):
+	     ...
+	TypeError: year must be aninteger
+
+Test for passing a negative float value
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("temperature", -3.17)
+	Traceback (most recent call last):
+	    ...
+	ValueError: temperature must be greater than 0
+
+Test for valid integer
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("count", 10)
+
