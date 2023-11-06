@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Class Rectangle that inherits from 
+Class Rectangle that inherits from
 BaseGeometry (7-base_geometry.py).
 """
 
