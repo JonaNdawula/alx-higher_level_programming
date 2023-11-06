@@ -1,0 +1,27 @@
+``1-my_list.py`` module
+========================
+using ``1-my_list.py``
+========================
+
+contains one function ``print_sorted()``
+
+``print_sorted`` return list of sorted integers in an ascending order
+
+How to import the function print_sorted
+	>>> MyList = __import__('1-my_list').MyList
+
+Test add positive integers to list
+	>>> my_list = MyList()
+	>>> my_list.append(100)
+	>>> my_list.append(5)
+	>>> my_list.append(80)
+	>>> my_list.print_sorted()
+	[5, 80, 100]
+Test add negative numbers to list
+	>>> my_list = MyList()
+	>>> my_list.append(-10)
+	>>> my_list.append(-77)
+	>>> my_list.append(-1)
+	>>> my_list.print_sorted()
+	[-77, -10, -1]
+
