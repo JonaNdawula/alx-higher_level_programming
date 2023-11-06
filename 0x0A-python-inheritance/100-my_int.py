@@ -17,7 +17,7 @@ class MyInt(int):
     def __eq__(self, value2):
         """
         Magic method to check if equal
-        Though revere=sed to not equal
+        Though reversed to not equal
         """
 
         return (self.__value != value2)
