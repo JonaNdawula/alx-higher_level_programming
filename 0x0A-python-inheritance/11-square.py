@@ -22,9 +22,9 @@ class Square(Rectangle):
 
     def __str__(self):
         """
-        Returns strin form of square
+        Returns string form of square
         """
-        return ("[square] {}/{}".format(self.__size, self.__size))
+        return ("[square]{}/{}".format(self.__size, self.__size))
 
     def area(self):
         """
