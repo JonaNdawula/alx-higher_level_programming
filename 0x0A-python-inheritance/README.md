@@ -23,3 +23,7 @@
 10. A  class Square that inherits from Rectangle (9-rectangle.py)
 
 11. A  class Square that inherits from Rectangle (9-rectangle.py). (task based on 10-square.py).
+
+12. A class MyInt that inherits from int
+
+13. A function that adds a new attribute to an object if it’s possible
