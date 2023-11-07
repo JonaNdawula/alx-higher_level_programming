@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-contains the function pascal_triangle
+Contains the function pascal_triangle
 """
 
 
