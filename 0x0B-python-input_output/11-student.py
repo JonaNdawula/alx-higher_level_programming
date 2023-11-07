@@ -22,6 +22,7 @@ class Student:
         """
         if attrs is None:
             return (self.__dict__)
+
         my_dict = {}
         i = 0
 
@@ -33,6 +34,7 @@ class Student:
             except Exception:
                 pass
             i += 1
+        return (my_dict)
 
     def reload_from_json(self, json):
         """
