@@ -41,4 +41,4 @@ class Student:
          Replaces all attributes of the Student instance
         """
 
-        self.__dict.update(json)
+        self.__dict__.update(json)
