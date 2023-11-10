@@ -26,8 +26,8 @@ class Rectangle(Base):
         Rectangle string form
         """
         return ("[Rectangle] ({}) {:d}/{:d} - {:d}/{:d}".
-          format(self.id, self.__x,
-              self.__y, self.__width, self.__height))
+                format(self.id, self.__x, self.__y,
+                       self.__width, self.__height))
 
     @property
     def width(self):
@@ -133,18 +133,11 @@ class Rectangle(Base):
         Rectangle instance with
         the character #
         """
-
-        i = 0
-
-        while i < self.__y:
+        for i in range(self.__y):
             print()
-            i += 1
-        while i < self.height:
-            j = 0
-            while j < self.__width:
-                if self.y == j:
-                    print(" " * self.__x, end="")
+        for i in range(self.__height):
+            for j in range(self.__x):
+                print(" ", end="")
+            for j in range(self.__width):
                 print("#", end="")
-                j += 1
             print()
-            i += 1
