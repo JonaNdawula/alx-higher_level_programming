@@ -142,7 +142,7 @@ class Rectangle(Base):
                 print("#", end="")
             print()
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """
         Assigns  an argument to each attribute
         """
@@ -150,3 +150,6 @@ class Rectangle(Base):
             my_list = ['id', 'width', 'height', 'x', 'y']
             for index in range(len(args)):
                 setattr(self, my_list[index], args[index])
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
