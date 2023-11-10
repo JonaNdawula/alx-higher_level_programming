@@ -141,3 +141,12 @@ class Rectangle(Base):
             for j in range(self.__width):
                 print("#", end="")
             print()
+
+    def update(self, *args):
+        """
+        Assigns  an argument to each attribute
+        """
+        if args is not None and len(args) != 0:
+            my_list = ['id', 'width', 'height', 'x', 'y']
+            for index in range(len(args)):
+                setattr(self, my_list[index], args[index])
