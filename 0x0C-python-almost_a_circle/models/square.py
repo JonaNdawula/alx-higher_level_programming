@@ -26,7 +26,6 @@ class Square(Rectangle):
                 format(self.id, self.x, self.y, self.size))
 
     @property
-
     def size(self):
         """
         size getter
@@ -45,3 +44,24 @@ class Square(Rectangle):
         else:
             self.width = value
             self.height = value
+
+    def update(self, *args, **kwargs):
+        """
+        Assigns argument to
+        each attribute
+        """
+        if args is not None and len(args) != 0:
+            my_list_att = ['id', 'size', 'x', 'y']
+            for index in range(len(args)):
+                if my_list_att[index] == 'size':
+                    setattr(self, 'width', args[index])
+                    setattr(self, 'height', args[index])
+                else:
+                    setattr(self, my_list_att[index], args[index])
+        else:
+            for key, value in kwargs.items():
+                if key == 'size':
+                    setattr(self, 'width', value)
+                    setattr(self, 'height', value)
+                else:
+                    setattr(self, key, value)
