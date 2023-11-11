@@ -3,6 +3,7 @@
 Base class
 """
 import json
+import os.path
 
 
 class Base:
@@ -68,7 +69,7 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         """
-        Returns an instance with 
+        Returns an instance with
         all attributes already set
         """
         if cls.__name__ == "Rectangle":
@@ -80,4 +81,23 @@ class Base:
 
         return (dummy_data)
 
-    
+    @classmethod
+    def load_from_file(cls):
+        """
+         Returns a list of instances
+        """
+        f_name = "{}.json".format(cls.__name__)
+
+        if os.path.exists(f_name) is False:
+            return ([])
+
+        with open(f_name, 'r') as fl:
+            str_ls = fl.read()
+
+        cls_list = cls.from_json_string(str_ls)
+        my_list = []
+
+        for index in range(len(cls_list)):
+            my_list.append(cls.create(**cls_list[index]))
+
+        return (my_list)
