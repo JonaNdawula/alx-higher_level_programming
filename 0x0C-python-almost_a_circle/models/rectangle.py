@@ -133,6 +133,7 @@ class Rectangle(Base):
         Rectangle instance with
         the character #
         """
+
         for i in range(self.__y):
             print()
         for i in range(self.__height):
