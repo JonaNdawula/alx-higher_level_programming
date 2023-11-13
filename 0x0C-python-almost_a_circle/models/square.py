@@ -22,7 +22,7 @@ class Square(Rectangle):
         string representation
         of square
         """
-        return ("[square] ({}) {:d}/{:d} -{:d}".
+        return ("[Square] ({}) {:d}/{:d} - {:d}".
                 format(self.id, self.x, self.y, self.size))
 
     @property
