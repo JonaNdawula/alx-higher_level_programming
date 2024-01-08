@@ -7,7 +7,4 @@ if (typeof i === 'number') {
   for (; i > 0; i--) {
     console.log('C is fun');	  
   }
-} 
-else {
-  console.log('Missing number of occurances');
-}
+} else console.log('Missing number of occurances');
