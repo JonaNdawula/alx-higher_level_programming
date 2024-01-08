@@ -8,4 +8,4 @@ if (!isNaN(n)) {
     console.log('X'.repeat(n));
     i++;
   }
-} else console.log('Missing size');
+}  else  console.log('Missing size');
