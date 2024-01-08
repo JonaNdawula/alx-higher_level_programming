@@ -1,5 +1,4 @@
 #!/usr/bin/node 
-
 const argv = process.argv;
 let i = 0;
 const n = parseInt(argv[2], 10);
