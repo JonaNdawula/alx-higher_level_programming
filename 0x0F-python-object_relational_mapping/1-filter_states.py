@@ -16,8 +16,9 @@ if __name__ == "__main__":
         host=mysql_host, user=mysql_user, password=mysql_password,
         database=mysql_name, port=port)
     cursor = data_base.cursor()
-    cursor.execute("SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDER BY id ASC")
-    rws = cursor.fetchall() 
+    cursor.execute("SELECT * FROM states WHERE \
+name LIKE BINARY 'N%' ORDER BY id ASC")
+    rws = cursor.fetchall()
 
     for rw in rws:
         print(rw)
