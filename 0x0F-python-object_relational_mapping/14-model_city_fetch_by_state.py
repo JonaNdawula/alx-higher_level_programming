@@ -21,4 +21,5 @@ if __name__ == "__main__":
     if res:
         for ct, st in res:
             print(f"{st.name}: ({ct.id}) {ct.name}")
+
     sess.close()
