@@ -14,7 +14,7 @@ if __name__ == "__main__":
         query = sys.argv[1]
     else:
         query = ""
-    params = {"search_query": query}
+    params = {"q": query}
     result = requests.post(myurl, data=params)
 
     try:
