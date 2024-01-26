@@ -25,5 +25,5 @@ if __name__ == "__main__":
             myId = json_res.get("id")
             myName = json_res.get("name")
             print(f"[{myId}] {myName}")
-    except ValueError as invalid_j:
+    except ValueError:
         print("Not a valid JSON")
