@@ -15,7 +15,7 @@ if __name__ == "__main__":
 
     given_string = urllib.parse.urlencode(params)
     data = given_string.encode("utf-8")
-    rqst = urllib.request.Request(myurl, data)
+    rqst = urllib.request.Request(myurl, data=data, method='POST')
 
     with urllib.request.urlopen(rqst) as resp:
         resp_txt = resp.read().decode("utf-8")
